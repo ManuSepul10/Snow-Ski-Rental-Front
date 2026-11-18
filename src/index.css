@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+    background: #f5f5ef;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button,
+  a,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  select {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: #fdd72d;
+    color: #10271f;
+  }
+}
+
+@layer utilities {
+  @media (hover: hover) {
+    button:not(:disabled):hover,
+    a.rounded-full:hover,
+    a.rounded-2xl[class*="bg-black"]:hover {
+      background-color: #fdd72d;
+      color: #10271f;
+    }
+  }
+
+  button:not(:disabled):focus-visible,
+  a.rounded-full:focus-visible {
+    outline: 2px solid #fdd72d;
+    outline-offset: 3px;
+  }
+}

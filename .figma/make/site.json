@@ -1,0 +1,10 @@
+{
+  "description": "Explora y alquila ropa para la nieve en un solo lugar, con opciones prácticas para disfrutar de tus aventuras de invierno sin comprar equipo.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
